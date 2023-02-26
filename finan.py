@@ -28,7 +28,15 @@ def show_predict_page():
     stroka_1540 = st.number_input(f"Оценочные обязательства (строка 1540), {val} на конец пероида:", value=0)
     
     st.header('Группы ликвидности')
-    st.subheader(f'Самые ликвидные (А1) = {int(stroka_1250 + stroka_1240)} {val}')
+    a_1 = int(stroka_1250 + stroka_1240)
+    st.subheader(f'Самые ликвидные активы (А1) = {a_1} {val}')
+    a_2 = int(stroka_1250 + stroka_1240)
+    st.subheader(f'Быстро ликвидные активы (А2) = {a_2} {val}')
+    a_3 = int(stroka_1250 + stroka_1240)
+    st.subheader(f'Медленно ликвидные активы (А3) = {a_3} {val}')
+    a_4 = int(stroka_1250 + stroka_1240)
+    st.subheader(f'Трудно ликвидные активы (А4) = {a_4} {val}')
+    
     
 # Вызываем приложение
 
