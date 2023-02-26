@@ -28,7 +28,7 @@ def show_predict_page():
     stroka_1540 = st.number_input(f"Оценочные обязательства (строка 1540), {val} на конец пероида:", value=0)
     
     st.header('Группы ликвидности')
-    st.subheader(f'Самые ликвидные (А1) = {stroka_1250 + stroka_1240}')
+    st.subheader(f'Самые ликвидные (А1) = {stroka_1250 + stroka_1240} {val}')
     
 # Вызываем приложение
 
