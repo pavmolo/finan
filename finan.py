@@ -36,6 +36,14 @@ def show_predict_page():
     st.subheader(f'Медленно ликвидные активы (А3) = {a_3} {val}')
     a_4 = int(stroka_1100)
     st.subheader(f'Трудно ликвидные активы (А4) = {a_4} {val}')
+    p_1 = int(stroka_1520)
+    st.subheader(f'Самые срочные обязательства (П1) = {p_1} {val}')
+    p_2 = int(stroka_1510 + stroka_1550)
+    st.subheader(f'Краткосрочные обязательства (П2) = {p_2} {val}')
+    p_3 = int(stroka_1400)
+    st.subheader(f'Долгосрочные обязательства (П3) = {p_3} {val}')
+    p_4 = int(stroka_1530 + stroka_1540)
+    st.subheader(f'Постоянные пассивы (П4) = {p_4} {val}')
     
     
 # Вызываем приложение
